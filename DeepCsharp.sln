@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCsharp.Multithreading", "DeepCsharp.Multithreading\DeepCsharp.Multithreading.csproj", "{AA73F839-B5FE-4786-A8AB-0935E84939F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCsharp.Delegates", "DeepCsharp.Delegates\DeepCsharp.Delegates.csproj", "{5AEEBBF4-9DBF-4848-88A7-D3771B2F1825}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{AA73F839-B5FE-4786-A8AB-0935E84939F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA73F839-B5FE-4786-A8AB-0935E84939F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA73F839-B5FE-4786-A8AB-0935E84939F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AEEBBF4-9DBF-4848-88A7-D3771B2F1825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEEBBF4-9DBF-4848-88A7-D3771B2F1825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEEBBF4-9DBF-4848-88A7-D3771B2F1825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEEBBF4-9DBF-4848-88A7-D3771B2F1825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
