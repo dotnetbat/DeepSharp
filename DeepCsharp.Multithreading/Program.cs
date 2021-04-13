@@ -6,7 +6,7 @@ namespace DeepCsharp.Multithreading
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      Console.WriteLine("Hello Multithreading!");
     }
   }
 }
