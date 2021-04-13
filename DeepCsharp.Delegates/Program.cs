@@ -1,4 +1,6 @@
 ﻿using System;
+using DeepCsharp.Delegates.co_and_contra_variance;
+using DeepCsharp.Delegates.delegates_and_events;
 
 namespace DeepCsharp.Delegates
 {
@@ -6,10 +8,9 @@ namespace DeepCsharp.Delegates
   {
     static void Main(string[] args)
     {
-      var a = new ClassA();
-      var b = new ClassB(a);
-
-      a.RaiseDelegateA();
+      DelegatesEventsClient.DoClientWork();
+      
+      CoContravarianceClient.DoClientWork();
     }
   }
 }
