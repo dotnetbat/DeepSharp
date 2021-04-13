@@ -6,7 +6,10 @@ namespace DeepCsharp.Delegates
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello Delegates!");
+      var a = new ClassA();
+      var b = new ClassB(a);
+
+      a.RaiseDelegateA();
     }
   }
 }
