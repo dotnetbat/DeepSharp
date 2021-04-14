@@ -2,8 +2,5 @@
 {
   public class ChildClass : ParentClass
   {
-    public ChildClass()
-    {
-    }
   }
 }
