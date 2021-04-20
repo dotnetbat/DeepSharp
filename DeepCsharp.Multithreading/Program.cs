@@ -6,7 +6,12 @@ namespace DeepCsharp.Multithreading
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello Multithreading!");
+      // var threadService = new ThreadService();
+      // threadService.StartThread();
+      
+      ContextSwitching.ShowSimpleExample();
+      
+      
     }
   }
 }
