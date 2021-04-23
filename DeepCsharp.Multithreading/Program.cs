@@ -9,9 +9,9 @@ namespace DeepCsharp.Multithreading
       // var threadService = new ThreadService();
       // threadService.StartThread();
       
-      ContextSwitching.ShowSimpleExample();
+      // ContextSwitching.ShowSimpleExample();
       
-      
+      DelegateAsync.ShowAsyncWork();
     }
   }
 }

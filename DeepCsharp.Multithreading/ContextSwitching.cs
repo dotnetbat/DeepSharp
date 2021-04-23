@@ -7,8 +7,11 @@ namespace DeepCsharp.Multithreading
     {
         public static void ShowSimpleExample()
         {
-            var thread = new Thread(WritUsingNewThread);
-            
+            var thread = new Thread(WriteUsingNewThread)
+            {
+                Name = "SuperThread"
+            };
+
             thread.Start();
             
             for (var i = 0; i < 1000; i++)
@@ -17,7 +20,7 @@ namespace DeepCsharp.Multithreading
             }
         }
 
-        private static void WritUsingNewThread()
+        private static void WriteUsingNewThread()
         {
             for (var i = 0; i < 1000; i++)
             {
