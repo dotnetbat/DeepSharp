@@ -1,31 +1,32 @@
 ﻿using System;
 using System.Threading;
+
 #nullable enable
 
 namespace DeepCsharp.Multithreading
 {
-    public class DelegateAsync
+  public class DelegateAsync
+  {
+    public static void ShowAsyncWork()
     {
-        public static void ShowAsyncWork()
-        {
-            Func<int, int> func = x =>
-            {
-                Thread.Sleep(500);
+      Func<int, int> func = x =>
+      {
+        Thread.Sleep(500);
 
-                Console.WriteLine("worker");
-                
-                return ++x;
-            };
+        Console.WriteLine("worker");
 
-            var asyncResult = func.BeginInvoke(0, null, null); // will not work on .net core
+        return ++x;
+      };
 
-            Console.WriteLine("main");
+      var asyncResult = func.BeginInvoke(0, null, null); // will not work on .net core
 
-            func.EndInvoke(null); // will not work on .net core
+      Console.WriteLine("main");
 
-            Console.WriteLine("main2");
-        }
-        
-        
+      func.EndInvoke(null); // will not work on .net core
+
+      Console.WriteLine("main2");
     }
+
+
+  }
 }
