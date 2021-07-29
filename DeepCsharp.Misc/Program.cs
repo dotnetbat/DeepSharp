@@ -16,6 +16,7 @@ namespace DeepCsharp.Misc
     static void Main(string[] args)
     {
       ConstructorsInheritanceShadowingOverriding.ConsoleWrite();
+      //ValueReferenceTypes.Test();
     }
   }
 }

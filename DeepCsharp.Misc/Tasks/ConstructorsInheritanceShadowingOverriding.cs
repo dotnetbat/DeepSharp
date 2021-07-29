@@ -6,13 +6,17 @@ namespace DeepCsharp.Misc.Tasks
   {
     public static void ConsoleWrite()
     {
-      A b = new B();
-
+      // A b = new B();
       // b.ShadowingMethod();
-      //
       // b.Poly();
-
       //var c = new B();
+
+      var c = new C();
+      A a = c;
+      
+      a.ShadowingMethod();
+      a.Poly();
+      c.ShadowingMethod();
     }
   }
 
@@ -61,6 +65,14 @@ namespace DeepCsharp.Misc.Tasks
       //base.Poly();
 
       Console.WriteLine("ABOverride");
+    }
+  }
+
+  public class C : B
+  {
+    public new void ShadowingMethod()
+    {
+      Console.WriteLine("NewNewShadowingMethod");
     }
   }
 }
