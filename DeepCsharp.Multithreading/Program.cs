@@ -1,4 +1,5 @@
 ﻿using System;
+using DeepCsharp.Multithreading.Async;
 
 namespace DeepCsharp.Multithreading
 {
@@ -11,7 +12,9 @@ namespace DeepCsharp.Multithreading
 
       // ContextSwitching.ShowSimpleExample();
 
-      DelegateAsync.ShowAsyncWork();
+      //DelegateAsync.ShowAsyncWork();
+
+      TaskClient.CalcAsync();
     }
   }
 }
